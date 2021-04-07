@@ -763,7 +763,7 @@ add_face(const VertexRange& vr, Graph& g)
 // the connected components of faces incident to such a vertex will not be linked together around the
 // vertex (boundary edges are connected by turning around the vertex in the interior of the mesh).
 // This produce a deterministic behavior for non-manifold vertices.
-template <class PolygonMesh, class RangeofVertexRange>
+/*template <class PolygonMesh, class RangeofVertexRange>
 void add_faces(const RangeofVertexRange& faces_to_add, PolygonMesh& pm)
 {
   typedef typename boost::graph_traits<PolygonMesh> GT;
@@ -980,7 +980,7 @@ void add_faces(const RangeofVertexRange& faces_to_add, PolygonMesh& pm)
       set_next(candidate, h, pm);
     }
   }
-}
+}*/
 
   /**
    * removes the incident face of `h` and changes all halfedges incident to the face into border halfedges. See `remove_face(g,h)` for a more generalized variant.
